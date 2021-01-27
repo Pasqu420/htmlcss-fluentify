@@ -6,13 +6,17 @@
   box-sizing: border-box;
 }
 
+body{
+  font-family: 'Roboto', sans-serif;
+}
+
 header{
   position: relative;
   height: 70vh;
   background-color: rgb(0,0,139);
 }
 
-.jumbotron, .container{
+.jumbotron, .container, .footer{
   width: 75%;
   margin: auto;
 }
@@ -27,31 +31,31 @@ header nav{
 nav li{
   list-style: none;
   display: inline-block;
-  margin-right: 3.8%;
+  margin-right: 3.5%;
   margin-top: 1.5vh;
   vertical-align: middle;
 }
 
-ul li:first-child{
+.list-link li:first-child{
   margin-right: 5.5%;
 }
 
-ul a{
+.list-link a{
   text-decoration: none;
   color: white;
 }
 
-ul li:nth-child(6){
+.list-link li:nth-child(6){
   margin-left: 10%;
 }
 
-ul li:nth-child(7n) a {
+.list-link li:nth-child(7n) a {
   border: 1px solid white;
   padding: 20% 40%;
   border-radius: 10%;
 }
 
-ul li:last-child a{
+.list-link li:last-child a{
   background-color: rgba(127,255,0, 1);
   padding: 8% 0%;
   border-radius: 10%;
@@ -170,6 +174,7 @@ ul li:last-child a{
 .graph{
   width: 45%;
   float: left;
+  margin-bottom: 10vh;
 }
 
 .test{
@@ -194,7 +199,47 @@ ul li:last-child a{
 /* regole footer */
 
 footer{
-  margin-top: 10vh;
-  height: 15vh;
+  height: 20vh;
   background-color: lightgrey;
+}
+
+.footer{
+  position: relative;
+}
+
+.footer::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#text-footer{
+  font-size: calc(1.5vw + 5px);
+  line-height: 20vh;
+  float: left;
+}
+
+.container-input{
+  position: absolute;
+  top: 40%;
+  right: 0%;
+}
+
+.input-footer, .info{
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.info li{
+  border: 1px solid black;
+  padding: 5% 0%;
+  margin-top: 5%;
+  list-style: none;
+  vertical-align: middle;
+  text-align: center;
+  background-color: green;
+}
+
+.info a{
+  text-decoration: none;
 }
