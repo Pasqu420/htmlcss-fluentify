@@ -1,0 +1,95 @@
+/* regole generali */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header{
+  height: 60vh;
+  /* debug */
+  background-color: blue;
+}
+
+/* regole header */
+
+header nav{
+  margin: auto;
+  margin-bottom: 14vh;
+  /* debug */
+  height: 8vh;
+  background-color: red;
+}
+
+.jumbotron, .container{
+  width: 80%;
+  margin: auto;
+}
+
+.text-jumbotron{
+  width: 40%;
+  /* debug */
+  height: 30vh;
+  background-color: red;
+}
+
+/* regole main */
+
+.head-main{
+  width: 100%;
+  margin-bottom: 10vh;
+  /* debug */
+  height: 15vh;
+  background-color: grey;
+}
+
+.container::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.training-plan{
+  width: 30%;
+  float: left;
+  margin-bottom: 10vh;
+  /* debug */
+  height: 35vh;
+  background-color: green;
+}
+
+.training-plan.center{
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+hr{
+  width: 90%;
+  margin: 10vh auto;
+}
+
+.graph{
+  width: 40%;
+  float: left;
+  /* debug */
+  height: 40vh;
+  background-color: green;
+}
+
+.test{
+  width: 40%;
+  float: left;
+  margin-left: 15%;
+  /* debug */
+  height: 40vh;
+  background-color: green;
+}
+
+/* regole footer */
+
+footer{
+  margin-top: 10vh;
+  height: 15vh;
+  background-color: grey;
+}
