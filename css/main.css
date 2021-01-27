@@ -27,7 +27,7 @@ header nav{
 nav li{
   list-style: none;
   display: inline-block;
-  margin-right: 3.9%;
+  margin-right: 3.8%;
   margin-top: 1.5vh;
   vertical-align: middle;
 }
@@ -87,7 +87,7 @@ ul li:last-child a{
 
 .head-main{
   margin-bottom: 10vh;
-  background-color: grey;
+  background-color: lightgrey;
   position: relative;
   height: 15vh;
 }
@@ -101,6 +101,7 @@ ul li:last-child a{
 }
 
 .head-main p{
+  color: grey;
   position: absolute;
   top: 60%;
   left: 50%;
@@ -117,37 +118,77 @@ ul li:last-child a{
 .training-plan{
   width: 30%;
   float: left;
-  margin-bottom: 10vh;
-  /* debug */
-  height: 35vh;
-  background-color: green;
+  margin-bottom: 5vh;
 }
 
+
 .training-plan.center{
+  width: 30%;
   margin-left: 5%;
   margin-right: 5%;
 }
 
-hr{
+/* contenuto traning plan */
+
+.img-training-plan{
+  width: 45%;
+  height: auto;
+  margin:auto;
+}
+
+.img-training-plan img{
+  width: 20vh;
+  height: 20vh;
+}
+
+.training-plan h3{
+  font-size: calc(1.5vw + 5px);
+  text-align: center;
+  margin-top: 3%;
+  color: lightgreen;
+}
+
+.hr-traning-plan{
+  width: 20%;
+  margin: 6% auto;
+}
+
+.training-plan p{
+  text-align: center;
+  color: rgb(169,169,169);
+  font-size: calc(1vw + 1px);
+}
+
+/* fine contenuto */
+
+#hr-main{
+  color: grey;
   width: 90%;
-  margin: 10vh auto;
+  margin: 5vh 0 ;
 }
 
 .graph{
-  width: 40%;
+  width: 45%;
   float: left;
-  /* debug */
-  height: 40vh;
-  background-color: green;
 }
 
 .test{
-  width: 40%;
+  width: 35%;
   float: left;
   margin-left: 15%;
-  /* debug */
-  height: 40vh;
-  background-color: green;
+}
+
+.test h2{
+  font-size: calc(2vw + 3px);
+}
+
+.test p{
+  font-size: calc(1vw + 3px);
+  margin: 5% 0;
+}
+
+.test a{
+  font-size: calc(1vw + 3px);
 }
 
 /* regole footer */
@@ -155,5 +196,5 @@ hr{
 footer{
   margin-top: 10vh;
   height: 15vh;
-  background-color: grey;
+  background-color: lightgrey;
 }
